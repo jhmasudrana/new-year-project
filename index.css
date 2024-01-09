@@ -2,27 +2,27 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Merriweather', serif;
 }
-
-.Banner {
-    background:
-        url(image/Banner\ Image.png) no-repeat  center,
-        linear-gradient(180deg, rgb(0, 0, 0) 100%, #00000000 100%);
-    background-size: cover;
-    width: 1200px;
-    margin-left: 65px;
-    height: 500px;
+.big-img{
+height: 100vh;
+width: 1200px;
+margin: auto;
+position: relative;
+background-size: cover;
+background-position:50% 50%;
+background-image: url(image/Banner\ Image.png);
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    color: #FFF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 16px;
-    opacity: 1;
 }
 
-
-
-.Banner-text {
-    text-align: center;
-}
 
 /* main section play */
 .off {
